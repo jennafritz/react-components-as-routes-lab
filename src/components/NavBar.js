@@ -3,9 +3,36 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
-      {/*{code here}*/}
-    </div>
+    <div className="navbar">
+      <NavLink
+      to="/"
+      exact
+      activeStyle={{
+        color: 'green'
+      }}
+      >Home</NavLink>
+      <NavLink
+      to="/movies"
+      exact
+      activeStyle={{
+        color: 'green'
+      }}
+      >Movies</NavLink>
+      <NavLink
+      to="/directors"
+      exact
+      activeStyle={{
+        color: 'green'
+      }}
+      >Directors</NavLink>
+      <NavLink
+      to="/actors"
+      exact
+      activeStyle={{
+        color: 'green'
+      }}
+      >Actors</NavLink>
+      </div>
   );
 };
 
